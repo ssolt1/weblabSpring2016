@@ -3,21 +3,30 @@
    <head>
       <meta charset="utf-8" />
       <title>Block</title>
+      <style media="screen">
+         header,
+         div,
+         footer {
+            background-color: tan;
+            /*display: inline;*/  /* does not accept margins, mimics span tag, only occupies width of content. */
+            display: inline-block;
+         }
+      </style>
    </head>
    <body>
       <header>
          <h1>
-            Top Bar header
+            Top Bar header, first h1
          </h1>
       </header>
       <div>
          <h1>
-            Some header
+            Second h1 header
          </h1>
          <p>
-            some text here.
+            first paragraph text here.
          </p>
-         <img src="a.jpg" title="a mountain" alt="an image of a mountain." />
+         <img src="image.jpg" title="a mountain" alt="an image of a mountain." />
       </div>
       <footer>
          and the footer.
@@ -25,13 +34,13 @@
       <article class="someArticle">
          <header>
             <h1>
-               Article name
+               Article > header > h1 name
             </h1>
          </header>
          <section class="secondaryContent">
             <article class="someQuotes">
             <p>
-               section text.
+               section > article text.
             </p>
             </article>
          </section>
