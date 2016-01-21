@@ -1,0 +1,144 @@
+Lecture Notes - 1/17/2016
+
+Here're my notes from tonights lecture.  What I recall anyway.  Also posting to Slack.
+
+Tables
+     Caption usage
+
+Block Elements
+Article
+Section
+Aside
+Header
+Footer
+Nav
+Div
+
+All behave the same way, simple block elements.  The different names are for semantic reasons.  The elements can be nested.  Here’s a sample 
+
+<article class="film_review">
+  <header>
+    <h2>Jurassic Park</h2>
+  </header>
+  <section class="main_review">
+    <p>Dinos were great!</p>
+  </section>
+  <section class="user_reviews">
+    <article class="user_review">
+      <p>Way too scary for me.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-16 19:00">May 16</time> by Lisa.
+        </p>
+      </footer>
+    </article>
+    <article class="user_review">
+      <p>I agree, dinos are my favorite.</p>
+      <footer>
+        <p>
+          Posted on <time datetime="2015-05-17 19:00">May 17</time> by Tom.
+        </p>
+      </footer>
+    </article>
+  </section>
+  <footer>
+    <p>
+      Posted on <time datetime="2015-05-15 19:00">May 15</time> by Staff.
+    </p>
+  </footer>
+</article>
+
+
+Forms
+
+Use fieldset to wrap related form inputs. 
+
+form tag has several required attributes 
+action
+method
+POST
+GET
+name
+<form action=“url/to/somefile” method=“POST” name=“myform”>
+
+
+Form Input elements should be given a label 
+<label for=“inputName”>Label</label>
+
+Input tags can have a lot of different types 
+text
+submit
+reset
+checkbox
+radio
+password
+etc.
+<input type=“text” id=“inputId” name=“inputId” />
+ 
+
+Wrap radio and checkboxes inside the label tag to give a larger click target 
+
+CSS
+
+CSS Rule Structure 
+
+selector {
+     property: value;
+}
+
+
+Types of selectors: 
+Tags
+Classes
+Id's
+Complex selectors
+
+Classes are identified with a ‘.’ 
+Id’s are identified with a ‘#’. 
+Tags just use the name of the tag. 
+
+.aClass {
+     margin: 0;
+}
+
+
+#anId {
+     margin: 0;
+}
+
+
+h1 {
+     margin: 0;
+}
+
+Selectors can target very specific elements 
+we can target first descendants of a specific element 
+
+p>a {
+     margin: 0;
+}
+
+
+This selectors targets ‘a’ tags that are direct descendants of any ‘p’ tag. 
+
+Properties
+
+
+Properties that effect all 4 sides of an element can be broken down into separate properties, one for each side. 
+example: 
+.aClass {
+     margin: 0;
+     /* or */
+     margin-top: 0;
+          margin-right: 0;
+     margin-bottom: 0;
+     margin-left: 0;
+     /* or */
+     margin: 0 0 0 0;
+
+}
+
+
+Properties start at the top of the element and move clock-wise around the element. 
+
+Note.  When the value is 0, no unit is required. 
