@@ -1,0 +1,33 @@
+Default Keybindings	
+
+You can change these in Preferences > Keybindings.
+	
+Command					Linux/Windows
+Expand Abbreviation			tab or ctrl + e
+Expand Abbreviation (interactive)	ctrl + alt + enter
+Wrap with Abbreviation			ctrl + alt + w
+Balance (outward)			ctrl + shift + e
+Balance (inward)			ctrl + shift + 0
+Go to Matching Pair			ctrl + alt + j
+Next Edit Point				ctrl + alt + →
+Previous Edit Point			ctrl + alt + ←
+Select Next Item			ctrl + shift + .
+Select Previous Item			ctrl + shift + ,
+Toggle Comment				ctrl + shift + /
+Split/Join Tag				ctrl + shift + `
+Remove Tag				ctrl + shift + ;
+Evaluate Math Expression		ctrl + shift + y
+Increment Number by 0.1			alt + ↑
+Decrement Number by 0.1			alt + ↓
+Increment Number by 1			ctrl + ↑
+Decrement Number by 1			ctrl + ↓
+Increment Number by 10			shift + alt + ↑
+Decrement Number by 10			shift + alt + ↓
+Reflect CSS value			ctrl + shift + r
+Update Image Size			ctrl + u
+Encode/Decode image to data:URL		ctrl + '
+Update Tag				ctrl + shift + '
+Merge Lines				ctrl + shift + m
+
+All actions and their keyboard shortcuts are available under Packages > Emmet menu item.	
+
