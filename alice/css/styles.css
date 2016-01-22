@@ -1,0 +1,55 @@
+.navbar {
+   background-color: #ccc;
+}
+
+body {
+   background-color: lightgray;
+   width: 40%;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0;
+}
+
+ul,
+li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   float: left;
+   display: block;
+   background-color: #666;
+   width: 33.3%;
+}
+
+ul:after {
+   content: "";
+   clear: both;
+   height: 0;
+   width: 0;
+   display: block;
+}
+
+a {
+   display: block;
+   background-color: darkblue;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+}
+
+div {
+   text-align: justify;
+}
+
+h1 {
+   font-size: 3rem;
+   text-align: center;
+}
+
+span {
+    font-family: Times, Times New Roman, Tahoma;
+    font-size: 36pt;
+}
