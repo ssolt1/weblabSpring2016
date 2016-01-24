@@ -20,8 +20,11 @@ li {
 li {
    float: left;
    display: block;
+   /*text-align: left;*/
    background-color: #666;
-   width: 33.3%;
+   /*border: 2px solid;
+   border-radius: 10px;*/
+   /*width: 33.3%;*/
 }
 
 ul:after {
@@ -40,7 +43,7 @@ a {
    text-decoration: none;
 }
 
-div {
+.chapBodyDiv {
    text-align: justify;
 }
 
