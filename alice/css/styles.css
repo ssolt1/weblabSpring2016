@@ -2,12 +2,17 @@
    background-color: #ccc;
 }
 
+.footbar {
+   background-color: #ccc;
+}
+
 body {
    background-color: lightgray;
    width: 40%;
    max-width: 600px;
    margin: 0 auto;
    padding: 0;
+   line-height: 1.5;
 }
 
 ul,
@@ -20,11 +25,9 @@ li {
 li {
    float: left;
    display: block;
-   /*text-align: left;*/
+   text-align: left;
    background-color: #666;
-   /*border: 2px solid;
-   border-radius: 10px;*/
-   /*width: 33.3%;*/
+   width: 25.0%;
 }
 
 ul:after {
@@ -55,4 +58,9 @@ h1 {
 span {
     font-family: Times, Times New Roman, Tahoma;
     font-size: 36pt;
+    color: #fff;
+    background-image: url("file:///home/steves/Documents/repositories/weblabSpring2016/alice/img/image3063.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1.0;
 }
