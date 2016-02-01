@@ -1,0 +1,16 @@
+div {
+   -moz-box-sizing: content-box;
+   -webkit-box-sizing: content-box;
+   box-sizing: border-box;
+}
+
+.flexbox-container {
+  display: flex;
+}
+
+/*div {
+   resize: both;
+   overflow: auto;
+   min-width: 50px; /*suggest a min-width &amp; min-height*/
+   /*min-height: 50px;
+}*/
