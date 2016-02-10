@@ -1,0 +1,111 @@
+
+
+2/8/2016
+
+nate happy bday june 17.
+
+more visual - excersises
+
+High / low...
+
+giving the tools to understand how things fit together, so I can work through it on my own.
+
+everthing is always a string on the web.
+
+
+
+quick js eval using google forms
+
+
+1 What is something? varable
+2 what type is value
+
+var movies = [{title:'Happy Gilmore', genre:'Comedy'}];
+movies[0].title
+
+Js Books and resources;
+
+mdn - tutorial > introductory object oriented js.
+
+
+jquery-2.1.1.js
+
+++++++++++++
+
+2/9/2016
+
+daily consistency
+// anonymous function, it has no name...
+var upperCaseFirstLetters = function (aStr) {
+   var cleaned = aStr.trim();
+   var words = cleaned.split(" ");
+};
+
+//Hoisting - give name to function, allows function to be executed
+//above where the function is named.
+var a = console.log("Something To Uppercase, Will This Work, Lol");
+var b = console.log("Who done it.");
+var c = console.log("     Haha:-)      ");
+console.log([a,b,c].join("\n"));
+function upperCaseFirstLetters (aStr) {
+   var cleaned = aStr.trim();
+   var words = cleaned.split(" ");
+   var output = [];
+   for (var i = 0; i < words.length; i = i + 1) {
+      var word = words[i];
+       var upperCased = word.charAt(0).toUpperCase() + word.substring(1);
+       output.push(upperCased);
+   }
+   //console.log(output.join(" "));
+   return output.join(" ");
+};
+
+// forEach
+//Hoisting - give name to function, allows function to be executed
+//above where the function is named.
+var a = console.log("Something To Uppercase, Will This Work, Lol");
+var b = console.log("Who done it.");
+var c = console.log("     Haha:-)      ");
+console.log([a,b,c].join("\n"));
+function upperCaseFirstLetters (aStr) {
+   var cleaned = aStr.trim();
+   var words = cleaned.split(" ");
+   var output = [];
+   for (var i = 0; i < words.length; i = i + 1) {
+      var word = words[i];
+       var upperCased = word.charAt(0).toUpperCase() + word.substring(1);
+       output.push(upperCased);
+   }
+   //console.log(output.join(" "));
+   return output.join(" ");
+};
+
+
+// map
+
+//Hoisting - give name to function, allows function to be executed
+//above where the function is named.
+var a = console.log("Something To Uppercase, Will This Work, Lol");
+var b = console.log("Who done it.");
+var c = console.log("     Haha:-)      ");
+console.log([a,b,c].join("\n"));
+function upperCaseFirstLetters (aStr) {
+   var cleaned = aStr.trim();
+   var words = cleaned.split(" ");
+   var output = [];
+   for (var i = 0; i < words.length; i = i + 1) {
+      var word = words[i];
+       var upperCased = word.charAt(0).toUpperCase() + word.substring(1);
+       output.push(upperCased);
+   }
+   //console.log(output.join(" "));
+   return output.join(" ");
+};
+
+
++++++++++++++
+
+var arr = [1,2,3,4];
+arr.forEach(function(num) { console.log(num); })
+
+write
