@@ -109,3 +109,19 @@ var arr = [1,2,3,4];
 arr.forEach(function(num) { console.log(num); })
 
 write
+
+
++++++++++++++
+
+Flatten an array of arrays
+var flattened = [[0, 1], [2, 3], [4, 5]]
+
+flattened.reduce(function(a, b) {
+  return a.concat(b);
+}, []);
+// flattened is [0, 1, 2, 3, 4, 5]
+
+
+Array.isArray([[0, 1], [2, 3], [4, 5]]);
+
+[0, 1, 2 [3, 4 ], [5, 6], 9, 10]
