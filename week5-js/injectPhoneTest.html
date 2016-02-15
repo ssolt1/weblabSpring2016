@@ -8,6 +8,27 @@
          h3 {
             margin: 40px;
          }
+         input:invalid {
+           background-color: #ffdddd;
+           /*border: 1px solid red;*/
+         }
+
+         form:invalid {
+           border: 5px solid #ffdddd;
+         }
+
+         input:valid {
+           background-color: #ddffdd;
+         }
+
+         form:valid {
+           /*border: 5px solid #ddffdd;*/
+         }
+
+         /*input:required {
+           border-color: #800000;
+           border-width: 1px;
+         }*/
          input.invalid {
             border: 1px solid red;
          }
@@ -23,17 +44,18 @@
                   <tr>
                      <th>Name</th>
                      <th>Email</th>
+                     <th>Phone</th>
                      <th>&nbsp;</th>
                   </tr>
                </thead>
                <tbody>
-                  <tr><td>name</td><td>email</td><td><button class="remove btn btn-primary btn-xs">remove</button></td></tr>
-                  <tr><td>name</td><td>email</td><td><button class="remove btn btn-primary btn-xs">remove</button></td></tr>
-                  <tr><td>name</td><td>email</td><td><button class="remove btn btn-primary btn-xs">remove</button></td></tr>
+                  <tr><td>name</td><td>email</td><td>phone</td><td><button class="remove btn btn-primary btn-xs">remove</button></td></tr>
+                  <tr><td>name</td><td>email</td><td>phone</td><td><button class="remove btn btn-primary btn-xs">remove</button></td></tr>
                </tbody>
                <tfoot>
-                  <td><input type="text" id="name" /></td>
-                  <td><input type="text" id="email" class="invalid"/></td>
+                  <td><input type="text" id="name" autofocus="autofocus" placeholder="First & Last Name" required/></td>
+                  <td><input type="text" id="email" class="invalid" placeholder="yourEmail@example.com" required/></td>
+                  <td><input type="tel" id="phone" class="invalid" pattern="\d{10}" placeholder="XXXXXXXXXX - 10 digits" maxlength="10" required/></td>
                   <td><button type="button" class="btn btn-info btn-sm" id="add">Add</button></td>
                </tfoot>
 
@@ -42,6 +64,6 @@
          </div>
       </div>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
-      <script type="text/javascript" src="js/userTable.js"></script>
+      <script type="text/javascript" src="js/userTablePhoneTest.js"></script>
    </body>
 </html>
