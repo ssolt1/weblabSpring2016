@@ -5,12 +5,12 @@
 nav {
   /*position: absolute;*/
   float: left;
-  left: 0px;
+  left: 0;
   width: 200px;
 }
 section {
   /* position is static by default */
-  margin-left: 200px;
+ margin-left: 200px;
 }
 footer {
   position: fixed;
@@ -33,7 +33,7 @@ body {
       margin-left: 25%;
    }
 }*/
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 400px) {
    nav {
       display: inline;
    }

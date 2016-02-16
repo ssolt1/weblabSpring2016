@@ -1,0 +1,31 @@
+#main {
+   display: flex;
+}
+#main > nav     {
+   order: 1;
+   width: 200px;
+ }
+
+#main > article {
+   order: 2;
+   min-width: 12em;
+   flex:1;
+}
+
+/*#main > aside   {
+   order: 3;
+   width: 200px;
+}*/
+
+@media all and (max-width: 600px) {
+  /* Too narrow to support three columns */
+  #main {
+     flex-flow: column;
+   }
+
+  /*#main > article, #main > nav, #main > aside {*/
+  #main > article, #main > nav {
+    /* Return them to document order */
+    order: 0; width: auto;
+  }
+}
