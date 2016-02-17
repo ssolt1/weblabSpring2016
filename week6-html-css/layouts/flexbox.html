@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Flexbox - the new normal</title>
+      <style media="screen">
+         body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            overflow: hidden;
+         }
+
+         .header {
+            background-color: lightblue;
+         }
+         .content {
+            background-color: #ccc;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: auto;
+            display: flex;
+         }
+
+         .sidebar {
+            background-color: #fff;
+            width: 200px;
+         }
+         .main {
+            flex-shrink: 1;
+            /*flex: 1 0 auto;*/
+            background-color: #efefef;
+            overflow-y: scroll;
+         }
+         .ads {
+            background-color: #ccc;
+            width: 150px;
+            display: flex;
+            flex: 1 1 auto;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+         }
+         /*.ad {
+
+         }*/
+         /*.ad:after {
+
+         }*/
+
+         .footer {
+            background-color: lightgreen;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="header">header</div>
+      <div class="content clearfix">
+         <div class="sidebar">
+            <ul>
+               <li>
+                  <a href="#">link1</a>
+               </li>
+               <li>
+                  <a href="#">link2</a>
+               </li>
+               <li>
+                  <a href="#">link3</a>
+               </li>
+               <li>
+                  <a href="#">link4</a>
+               </li>
+            </ul>
+         </div>
+         <div class="main">
+            <!-- p*5>lorem -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quod sit maxime reprehenderit, harum magnam quisquam porro, iusto a, odio nostrum dicta fuga cumque modi esse ab ad velit optio?</p>
+            <p>Soluta, libero dolor consequuntur consectetur incidunt, officia voluptates ea expedita beatae numquam. Sequi repudiandae ad quam laudantium, autem reiciendis dolorem fugiat architecto distinctio, blanditiis aliquid? Laborum, voluptates earum mollitia provident.</p>
+            <p>Eaque nesciunt sint ea sit eius odit eveniet quibusdam. Ipsa, in, quia sequi fugiat temporibus, autem doloremque similique dicta ad nam corrupti, fugit consectetur incidunt dolores iusto quasi optio quidem!</p>
+            <p>Eos dolor aliquam eum velit odio sint ratione sit necessitatibus porro ducimus beatae voluptates expedita totam sed, sunt reiciendis dolore facere nam nihil, distinctio incidunt provident nobis quis numquam. Cumque.</p>
+            <p>Omnis eius consequuntur officia, cupiditate impedit est. Expedita illo totam, laborum similique incidunt voluptatum saepe vitae quasi, eius aut, omnis delectus in? Minima quibusdam, repudiandae nemo. Voluptates quos explicabo aperiam.</p>
+         </div>
+         <div class="ads">
+            ad$
+         </div>
+      </div>
+      <div class="footer">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint quasi, maxime soluta? Aliquam repellendus sunt necessitatibus quibusdam ipsum ullam, dolorem, quod eveniet quas illum perferendis nobis minima, sit officia laudantium.</p>
+
+         <p>Copyright &copy; 2016.</p>
+      </div>
+   </body>
+</html>
