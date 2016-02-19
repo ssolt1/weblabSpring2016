@@ -1,0 +1,30 @@
+
+
+# standard
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+# @import
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800);
+
+# javascript
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Open+Sans:400,300,600,700,800:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+
+# Integrate the fonts into your CSS:
+font-family: 'Open Sans', sans-serif;
+
++++++++++
+
+https://unsplash.it/200/300?image=892
+

@@ -20,11 +20,10 @@ $(document).ready(function(){
       var email = emailField.val();
       var phone = phoneField.val();
 
-      // if (email.match(/^.+?\@.+\..+?$/)) {
-      //    emailField.removeClass("invalid");
-
       if (email.match(/^.+?\@.+\..+?$/)) {
             emailField.removeClass("invalid");
+               // if (phone.match(/^\d{10}/)) {
+               //    phoneField.removeClass("invalid");
 
 
          addUser({
@@ -36,9 +35,10 @@ $(document).ready(function(){
       nameField.val("");
       emailField.val("");
       phoneField.val("");
+   // }
    } else {
       emailField.addClass("invalid");
-
+      phoneField.addClass("invalid");
    }
    });
 

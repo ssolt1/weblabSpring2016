@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+        <title>IP-API.com Geo Location Demo</title>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </head>
+    <body>
+        <table id="GeoResults"></table>
+        <script>
+        $.getJSON("http://ip-api.com/json/?callback=?", function(data) {
+            var table_body = "";
+            $.each(data, function(k, v) {
+                table_body += "<tr><td>" + k + "</td><td><b>" + v + "</b></td></tr>";
+            });
+            $("#GeoResults").html(table_body);
+        });
+        </script>
+      </body>
+</html>
+<!-- file:///home/steves/Documents/repositories/weblabSpring2016/week6-html-css/indexJsonGetTest.html
+output:
+
+as	AS7922 Comcast Cable Communications, Inc.
+city	Fort Collins
+country	United States
+countryCode	US
+isp	Comcast Cable
+lat	40.5195
+lon	-105.0628
+org	Comcast Cable
+query	67.174.105.77
+region	CO
+regionName	Colorado
+status	success
+timezone	America/Denver
+zip	80525 -->
