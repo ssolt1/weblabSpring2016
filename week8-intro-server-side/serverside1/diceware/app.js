@@ -35,6 +35,7 @@ app.post('/rolled', function(req,res) {
          }
       }
       console.log(theNumber);
+      console.log(typeof theNumber);
       res.render('pages/rolled', {
          rolledNumber : theNumber
    });

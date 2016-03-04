@@ -1,0 +1,16 @@
+
+Download asc file
+ Remove first two rows, and last 11 lines, start with the empty line above "-----BEGIN PGP SIGNATURE-----"
+  or delete lines after last rollId: with value of 66666
+ Save copy
+ Search and replace:
+  tab delimeter with a comma plus double quote ( :%s/^I/,"/g )
+  add " at the end of the second column/text. ( :%s/$/"/g )
+  check for unevenly matched " and even out.
+ 
+
+node_modules/csvtojson/bin/csvtojson  diceware.wordlist.csv  --noheader=true --headers='["rollId","Word"]' > diceware.wordlist.json
+
+var converter=new require("csvtojson").Converter({headers:["rollId","Word"]});
+
+
