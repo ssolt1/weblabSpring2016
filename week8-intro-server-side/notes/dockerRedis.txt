@@ -1,0 +1,104 @@
+
+
+docker pull bitnami/redis:latest
+
+steves@druk-omen4:~/Downloads/redis$ docker run --name redis bitnami/redis
+
+
+[s6-init] making user provided files available at /var/run/s6/etc...exited 0.
+[s6-init] ensuring user provided files have correct perms...exited 0.
+[fix-attrs.d] applying ownership & permissions fixes...
+[fix-attrs.d] done.
+[cont-init.d] executing container initialization scripts...
+[cont-init.d] 00-bitnami-check-updates: executing... 
+[cont-init.d] 00-bitnami-check-updates: exited 0.
+[cont-init.d] 00-bitnami-welcome: executing... 
+       ___ _ _                   _
+      | _ |_) |_ _ _  __ _ _ __ (_)
+      | _ \ |  _| ' \/ _` | '  \| |
+      |___/_|\__|_|_|\__,_|_|_|_|_|
+
+  *** Welcome to the redis image ***
+  *** More information: https://github.com/bitnami/bitnami-docker-redis ***
+  *** Issues: https://github.com/bitnami/bitnami-docker-redis/issues ***
+
+  redis cheatsheet:
+  
+    ENVIRONMENT VARIABLES:
+      REDIS_PASSWORD: Password set at first boot for your redis server (default: none).
+      REDIS_REPLICATION_MODE: Replication mode. Possible values master/slave (default: none).
+      REDIS_MASTER_HOST: Hostname/IP of replication master (parameter available only on slave).
+      REDIS_MASTER_PORT: Port of replication master, defaults to 6379 (parameter available only on slave).
+      REDIS_MASTER_PASSWORD: Master auth password used by slave to authenticate with the master (default: none).
+  
+    VOLUMES:
+      /bitnami/redis/data: Location of redis database dump.
+      /bitnami/redis/conf: Location of redis.conf (redis config file).
+      /bitnami/redis/logs: Location of redis logs.
+  
+    PORTS:
+      6379: Default redis port.
+  
+    MISC:
+      Options: You can add extra options during the docker run using the -- prefix.
+      Note: The password is only set the first time you run the container.
+  
+    COMMANDS:
+      print-help: Print this page.
+      check-updates: Check if a new version of the redis image is available.
+
+  Visit https://github.com/bitnami/bitnami-docker-redis for more information.
+[cont-init.d] 00-bitnami-welcome: exited 0.
+[cont-init.d] 01-bitnami-redis: executing... 
+
+#########################################################################
+
+ Credentials for redis:
+
+
+  Warning: Password not set.
+
+#########################################################################
+                                                                       
+[cont-init.d] 01-bitnami-redis: exited 0.
+[cont-init.d] done.
+[services.d] starting services
+[services.d] done.
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 3.0.7 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 188
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+188:M 07 Mar 03:26:07.032 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+188:M 07 Mar 03:26:07.032 # Server started, Redis version 3.0.7
+188:M 07 Mar 03:26:07.033 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+188:M 07 Mar 03:26:07.033 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+188:M 07 Mar 03:26:07.033 * The server is now ready to accept connections on port 6379
+
+*** Your container is up to date! ***
+
+
++++++
+
+stop old exited containers before restarting.
+
+for i in `docker ps -qa`; do docker stop ${i}; done
+
+then remove 
+for i in `docker ps -qa`; do docker rm ${i}; done
+
+
+

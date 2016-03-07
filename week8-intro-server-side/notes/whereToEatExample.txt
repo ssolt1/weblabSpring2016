@@ -1,0 +1,31 @@
+
+
+from https://www.youtube.com/watch?v=ptjEwXHWAfQ
+
+node.js, socket.io, and redis beginner's tutorial - Server Side
+
+need to rethink my data save from rdbms
+
+install redis and socket io clients with npm
+
+
+
+socket.io - server side
+ emit = send  <- an emit.add on the server side, means there is an on.add on the client side.
+ on = listen
+
+so there is a socket.io ? on the socket.io client side.
+
++++++++++
+
+https://www.youtube.com/watch?v=EdMCCxtepHk
+
+node.js, socket.io, and redis beginner's tutorial - Client Side
+
+get client side socket.io js lib on git hub.
+
+suggests to use leaflet to do js maps.
+
+on client side Josh mashes view and controler together, joshNS.js
+
+
