@@ -1,0 +1,36 @@
+
+Learning express web application development
+
+routes/contacts.js
+
+var express = require('express');
+var router = express.Router();
+var moment = require('moment');
+var Contact = require('../models/contacts');
+
+router.get('/', function(req, res) {
+  Contact.find( function(err, contacts, count) {
+    res.render('list', {contacts: contacts});
+  })
+});
+
+router.post('/', function(req, res) {
+    new Contact({
+      name: req.body.fullname,
+      job: req.body.job,
+      nickname: req.body.nickname,
+      email: req.body.email
+    }).save(function(err, contact, count) {
+      if(err) {
+        res.status(400).send('Error saving new contact: ' + err);
+      } else {
+        res.send("New contact created");
+      }
+    })
+});
+
+
+++++++++++++++
+model/contacts.js
+
+

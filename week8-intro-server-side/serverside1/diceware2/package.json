@@ -1,0 +1,24 @@
+{
+  "name": "diceware",
+  "version": "1.0.0",
+  "description": "node implimentation of the diceware passphrase generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dice",
+    "diceware",
+    "passphrase"
+  ],
+  "author": "Steve Solt",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "csvtojson": "^0.5.2",
+    "ejs": "^2.4.1",
+    "express": "^4.13.4",
+    "redis": "^2.5.0-1",
+    "sqlite3": "^3.1.1"
+  }
+}

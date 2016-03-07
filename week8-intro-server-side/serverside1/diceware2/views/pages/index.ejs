@@ -1,0 +1,30 @@
+<!-- diceware/views/pages/index.ejs -->
+<html>
+   <head>
+      <!-- Includer our head.ejs file -->
+      <% include ../partials/head.ejs %>
+   </head>
+   <body>
+      <header>
+         <!-- Include the header of the page -->
+         <% include ../partials/header %>
+         <!-- <h1>Welcome to my Diceware index.ejs page</h1> -->
+      </header>
+         <div class="content">
+            <p>
+               Diceware&trade; is a method for picking passphrases that uses dice to select words at random from a special list called the Diceware Word List. Each word in the list is preceded by a five digit number. All the digits are between one and six, allowing you to use the outcomes of five dice rolls to select a word from the list.
+            </p>
+         </div>
+         <div class="option">
+            <a href="/roll">roll my own</a>
+         </div>
+         <br>
+         <div class="option">
+            <a href="/lazyroll">roll for me</a>
+         </div>
+
+      <footer>
+         <% include ../partials/footer %>
+      </footer>
+   </body>
+</html>
