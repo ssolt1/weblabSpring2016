@@ -1,0 +1,33 @@
+
+
+# from David Jones
+
+https://github.com/WebDevBootcamp/weblab-js2-day1
+https://github.com/drj-io/weblab-portfolio/blob/master/.gitignore
+
+# CodePen
+# Fullscreen HTML5 Page Background Video
+https://codepen.io/dudleystorey/pen/knqyK
+
+# portfolio site examples
+http://www.kerryhyndman.co.uk/
+
+http://aaronporter.co/
+
+http://www.colingrist.com/
+
+http://www.luiskonrad.com
+
+http://www.positivehype.com/
+
+http://www.madwire.com
+
+http://www.studiotheolin.com/#hello
+
+# interesting animation sites
+
+ http://soulwire.github.io/FoldScroll/
+
+http://alvarotrigo.com/fullPage/#secondPage
+
+http://scrollmagic.io/
