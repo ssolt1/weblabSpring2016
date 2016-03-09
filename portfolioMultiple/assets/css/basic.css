@@ -1,6 +1,25 @@
+body {
+	background-image: url("grey.png");
+	font-family: "Charter", Georgia, serif;
+	margin-top:30px;
+}
 
+.text-art {
+	font-family: Monospace;
+	white-space: pre;
+	font-size: 10px;
+}
 
-# basic.css
+ul.basiclist li {
+	list-style: none;
+	display: inline;
+}
+ul.basiclist li:after {
+	content: " \00b7";
+}
+ul.basiclist li:last-child:after {
+	content: none;
+}
 
 /*
 	Vis
@@ -41,4 +60,42 @@ path.arc {
 #vis svg text.textHover {
 	font-size: 14px;
 	cursor: pointer;
+}
+
+/*
+	Tables
+*/
+
+.table.item-table {
+	background-color: white;
+	margin-bottom: 50px;
+}
+
+.table.item-table th {
+	text-align: center;
+	font-weight: 300;
+}
+
+.table.follow-table {
+	background-color: white;
+}
+
+.table.follow-table th {
+	text-align: center;
+	font-weight: 300;
+}
+
+.table.follow-table td {
+	text-align: center;
+	width: 33%;
+}
+
+@media screen and (min-width: 800px) {
+	.table.item-table tr td:first-child {
+		width: 300px;
+	}
+
+	body {
+		font-size: 18px;
+	}
 }

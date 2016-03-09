@@ -1,0 +1,286 @@
+// data
+var json = {
+	name: 'patorjk.com',
+	children: [
+		{
+			name: 'Visual Basic',
+			children: [
+				{
+					name: 'VB Array Tutorial',
+					href: 'http://patorjk.com/programming/tutorials/vbarrays.htm'
+				},
+				{
+					name: 'VB 6.0 Code Bank',
+					href: 'http://patorjk.com/programming/tutorials/vb6codebank.htm'
+				},
+				{
+					name: 'VB 6.0 Example Archive',
+					href: 'http://patorjk.com/programming/vb6examples.htm'
+				},
+			]
+		},
+		{
+			name: 'Games',
+			children: [
+				{
+					name: 'Scrolling Text Time Waster',
+					href: 'http://patorjk.com/misc/scrollingtext/timewaster.php'
+				},
+				{
+					name: 'Snake',
+					href: 'http://patorjk.com/games/snake/'
+				},
+				{
+					name: 'Slider Puzzles',
+					href: 'http://patorjk.com/games/sliderpuzzles/'
+				}
+			]
+		},
+		{
+			name: 'Apps',
+			children: [
+				{
+					name: 'Gradient Image Generator',
+					href: 'http://patorjk.com/gradient-image-generator/'
+				},
+				{
+					name: 'Image to Color Palette Generator',
+					href: 'http://www.patorjk.com/color-palette-generator/'
+				},
+				{
+					name: 'Keyboard Layout Analyzer',
+					href: 'http://patorjk.com/keyboard-layout-analyzer/'
+				},
+				{
+					name: 'Text Color Fader',
+					href: 'http://patorjk.com/text-color-fader/'
+				},
+				{
+					name: 'Text to ASCII Art Generator',
+					href: 'http://patorjk.com/software/taag/'
+				},
+				{
+					name: 'Typing Speed Test',
+					href: 'http://patorjk.com/typing-speed-test/'
+				},
+				{
+					name: 'Social Media Showdown',
+					href: 'http://patorjk.com/showdown/'
+				},
+				{
+					name: 'Years Spent Watching YouTube',
+					href: 'http://patorjk.com/years-spent-watching-youtube/'
+				}
+			]
+		},
+		{
+			name: 'Visualizations',
+			children: [
+				{
+					name: 'Computer Science Salaries',
+					href: 'http://patorjk.com/vis/computer-science-salaries/'
+				},
+				{
+					name: 'Game of Thrones Appearences',
+					href: 'http://patorjk.com/vis/chaos-ladder/'
+				},
+				{
+					name: 'Nutrition Calculator',
+					href: 'http://patorjk.com/vis/nutrition-calculator/'
+				},
+				{
+					name: 'Space Dust',
+					href: 'http://patorjk.com/vis/space-dust/'
+				}
+			]
+		},
+		{
+			name: 'Blogs',
+			children: [
+				{
+					name: 'Cracking MaGuS\'s Fate Zero Encryption',
+					href: 'http://patorjk.com/blog/2012/05/03/cracking-magus-fate-zero-encryption/'
+				},
+				{
+					name: 'Pronouncing SQL: S-Q-L or Sequal?',
+					href: 'http://patorjk.com/blog/2012/01/26/pronouncing-sql-s-q-l-or-sequel/'
+				},
+				{
+					name: 'Was Mark Zuckerberg an AOL add-on developer?',
+					href: 'http://patorjk.com/blog/2013/04/09/was-mark-zuckerberg-an-aol-add-on-developer/'
+				},
+				{
+					name: 'TheDraw\'s Lost ANSI Art Fonts',
+					href: 'http://patorjk.com/blog/2014/01/22/thedraws-lost-ansi-art-fonts/'
+				},
+				{
+					name: 'Linux Test',
+					href: 'http://patorjk.com/blog/2011/11/28/testing-your-linux-skills/'
+				},
+				{
+					name: 'Distance Your Fingers Move While Typing',
+					href: 'http://patorjk.com/blog/2009/07/12/typing-distance/'
+				}
+			]
+		},
+		{
+			name: 'Miscellaneous',
+			children: [
+				{
+					name: 'About Pat',
+					href: 'http://patorjk.com/blog/about/'
+				},
+				{
+					name: 'Arial ASCII Art',
+					href: 'http://patorjk.com/arial-ascii-art/'
+				},
+				{
+					name: '179 Ways to Annoy People',
+					href: 'http://patorjk.com/misc/chainletters/179waystoannoypeople.htm'
+				},
+				{
+					name: '90\'s Photomosaics',
+					href: 'http://patorjk.com/software/mosaicer/mosaics.htm'
+				}
+			]
+		},
+		{
+			name: 'Social',
+			children: [
+				{
+					name: 'Blog',
+					href: 'http://patorjk.com/blog/'
+				},
+				{
+					name: 'Flickr',
+					href: 'https://www.flickr.com/photos/40423570@N07/'
+				},
+				{
+					name: 'Github',
+					href: 'https://github.com/patorjk'
+				},
+				{
+					name: 'Instagram',
+					href: 'https://www.instagram.com/patorjk/'
+				},
+				{
+					name: 'Twitter',
+					href: 'https://twitter.com/patorjk'
+				},
+				{
+					name: '500px',
+					href: 'https://500px.com/patrickgillespie1'
+				}
+			]
+		}
+	]
+};
+
+var tTime = 2000;
+if (localStorage && Date.now) {
+	var lastVisit = localStorage.getItem('lastVisit') || 0;
+	var timeElapsed = Date.now() - lastVisit;
+
+	console.log('-');
+	console.log(lastVisit);
+	console.log(timeElapsed);
+
+	if ( timeElapsed < 30000 ) {
+		tTime = 0;
+	}
+
+	localStorage.setItem('lastVisit', Date.now());
+}
+
+// vis
+var w = 1200,
+	h = 800,
+	rx = w / 2,
+	ry = h / 2,
+	m0,
+	rotate = 0;
+
+var cluster = d3.layout.cluster()
+	.size([360, ry - 120])
+	.sort(null);
+
+var diagonal = d3.svg.diagonal.radial()
+	.projection(function(d) { return [d.y, d.x / 180 * Math.PI]; });
+
+var svg = d3.select("#vis").append("div")
+	.style("width", w + "px")
+	.style("height", h + 120 + "px")
+	.style('margin', '0 auto');
+
+var vis = svg.append("svg:svg")
+	.attr("width", w)
+	.attr("height", h + 90)
+	.append("svg:g")
+		.attr("transform", "translate(" + rx + "," + (ry+40) + ")");
+
+vis.append("svg:path")
+	.attr("class", "arc")
+	.attr('d', d3.svg.arc().innerRadius(1).outerRadius(1).startAngle(0).endAngle(2 * Math.PI))
+	.transition()
+		.delay(0)
+		.duration(tTime)
+		.attr("d", d3.svg.arc().innerRadius(ry - 120).outerRadius(ry).startAngle(0).endAngle(2 * Math.PI));
+
+// extra paths
+for (var ii = 0; ii < 10; ii++) {
+	vis.append("svg:path")
+		.attr("class", "arc")
+		.attr('d', d3.svg.arc().innerRadius(1).outerRadius(1).startAngle(0).endAngle(2 * Math.PI))
+		.style('fill-opacity', 1 - (0.1 * (ii+1)))
+		.transition()
+			.delay(0)
+			.duration(tTime)
+			.attr("d", d3.svg.arc().innerRadius(ry + ((ii+0)*4)).outerRadius(ry + ((ii+1)*4)).startAngle(0).endAngle(2 * Math.PI));
+}
+
+var nodes = cluster.nodes(json);
+
+var link = vis.selectAll("path.link")
+	.data(cluster.links(nodes))
+	.enter().append("svg:path")
+		.attr("class", "link")
+		.attr('d', d3.svg.diagonal.radial().projection(function(d) { return [0, 0 / 180 * Math.PI]; }))
+		.transition()
+			.duration(tTime)
+			.attr("d", diagonal);
+
+var node = vis.selectAll("g.node")
+	.data(nodes)
+	.enter().append("svg:g")
+		.attr("class", "node")
+		.attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + 0 + ")"; })
+		.style('opacity', 0);
+
+node
+	.transition()
+		.duration(tTime)
+		.style('opacity', 1)
+		.attr("transform", function(d) { return "rotate(" + (d.x - 90) + ")translate(" + d.y + ")"; });
+
+node.append("svg:circle")
+	.attr("r", 3);
+
+node.append("svg:text")
+	.attr("dx", function(d) { return d.x < 180 ? 8 : -8; })
+	.attr("dy", ".31em")
+	.attr("text-anchor", function(d) { return d.x < 180 ? "start" : "end"; })
+	.attr("transform", function(d) { return d.x < 180 ? null : "rotate(180)"; })
+	.text(function(d) {
+		return d.name;
+	})
+	.on('mouseenter', function(d) {
+		if (d.children) return;
+		d3.select(this).classed('textHover', true);
+	})
+	.on('mouseleave',function() {
+		d3.select(this).classed('textHover', false);
+	})
+	.on('click', function(d) {
+		if (!d.href) return;
+		window.location = d.href;
+	});
