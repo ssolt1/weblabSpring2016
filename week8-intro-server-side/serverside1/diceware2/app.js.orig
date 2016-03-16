@@ -31,8 +31,6 @@ app.get('/roll',function(req,res) {
 
 app.post('/rolled', function(req,res) {
    var theNumber = '';
-   var reply = '';
-   var reply1 = '';
    for (var key in req.body) {
       if(req.body.hasOwnProperty(key)) {
          theNumber += req.body[key];
@@ -40,17 +38,9 @@ app.post('/rolled', function(req,res) {
       }
       console.log(theNumber);
       console.log(typeof theNumber);
-      client.get(theNumber, function(err, reply) {
-         console.log(reply);
-         reply1 = reply;
-         console.log(reply1);
-         res.render('pages/rolled', {
-            rolledNumber : theNumber,
-            reply1 : reply
-      });
-
+      res.render('pages/rolled', {
+         rolledNumber : theNumber
    });
-
 });
 
 app.get('/lazyroll',function(req,res) {

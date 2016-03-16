@@ -1,4 +1,40 @@
 
+# more of the answer:
+
+client.get(theNumber, function(err, reply) {
+    console.log(reply);
+});
+
+client.get('11111', function(err, reply) {
+    console.log(reply);
+});
+
+client.get('framework', function(err, reply) {
+    console.log(reply);
+});
+
+client.get() lets you retrieve a key stored in Redis. The value of the key can be accessed via the callback argument reply. If the key doesn’t exist, the value of reply will be empty.
+
+++++++++++++
+
+steves@druk-omen4:~/Documents/repositories/weblabSpring2016/week8-intro-server-side/serverside1/diceware2$ node hello2.js 
+Reply: a
+steves@druk-omen4:~/Documents/repositories/weblabSpring2016/week8-intro-server-side/serverside1/diceware2$ cat hello2.js 
+var redis = require("redis"); // 1
+//var client = redis.createClient(6379, '127.0.0.1', {no_ready_check: true}); // 2
+var client = redis.createClient(6379, '127.0.0.1'); // 2
+var pass = client.get(11111, redis.print); // 3
+client.quit(); // 4
+//console.log(pass);
+steves@druk-omen4:~/Documents/repositories/weblabSpring2016/week8-intro-server-side/serverside1/diceware2$ cat hello.js 
+var redis = require("redis"); // 1
+var client = redis.createClient(6379, '127.0.0.1', {no_ready_check: true}); // 2
+//var client = redis.createClient(6379, '127.0.0.1'); // 2
+client.get(11111, redis.print); // 3
+client.quit(); // 4
+
++++++++++++
+
 
 var redis = require("redis"); // 1
 var client = redis.createClient(6379, '127.0.0.1', {no_ready_check: true}); // 2

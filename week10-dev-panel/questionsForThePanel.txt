@@ -1,0 +1,19 @@
+Hi Mary, this question is for you, who will be on the panel and what companies are they representing? I would like to do some research before Monday.
+
+Questions for the panel:
+
+- What are your biggest development challenges today and why?
+
+- What are your biggest developer/talent hiring challenges today and why?
+
+- Fit is important, how does your company evaluate a potential candidate?
+
+- Does your interviewing process usually include a programming challenge, like fizz buzz or flattening an array?
+
+- When reviewing potential developers public GitHub code repos, what helps you most, to quickly see how that person thinks, problem solves, etc...? Like 1) neatly commented code with descriptive README? 2) Brief outline of the project with a narrative of the main steps and the reasons why? 3) Additional comments on road blocks encountered and how they were resolved? 
+
+- Is javaScript/node.js and other related JS technologies a major part of your companies future web development road map?
+
+- Are your development and operation teams embracing newer technologies like: docker, micro-services, devOps, continuous testing/integration/delivery? Any road blocks or issues that you have encountered using these technologies?
+
+- Any suggestions or tips for candidates making a career transition, being taken seriously about our new direction.
