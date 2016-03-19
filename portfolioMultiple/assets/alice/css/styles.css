@@ -1,0 +1,66 @@
+.navbar {
+   background-color: #ccc;
+}
+
+.footbar {
+   background-color: #ccc;
+}
+
+body {
+   background-color: lightgray;
+   width: 40%;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 0;
+   line-height: 1.5;
+}
+
+ul,
+li {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   float: left;
+   display: block;
+   text-align: left;
+   background-color: #666;
+   width: 25.0%;
+}
+
+ul:after {
+   content: "";
+   clear: both;
+   height: 0;
+   width: 0;
+   display: block;
+}
+
+a {
+   display: block;
+   background-color: darkblue;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+}
+
+.chapBodyDiv {
+   text-align: justify;
+}
+
+h1 {
+   font-size: 3rem;
+   text-align: center;
+}
+
+span {
+    font-family: Times, Times New Roman, Tahoma;
+    font-size: 36pt;
+    color: #fff;
+    background-image: url("file:///home/steves/Documents/repositories/weblabSpring2016/alice/img/image3063.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 1.0;
+}

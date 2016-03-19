@@ -1,0 +1,20 @@
+
+# ok these work in one direction, but need a place holder for the other opening tag.
+:%s/\n$/<<</g
+:%s/\n$/<\/p>/g
+
+\f	Matches a page break/form feed character.
+\p	Matches a newline (CR/LF) (paragraph) (DOS Files).
+\r	Matches a newline (CR Only) (paragraph) (MAC Files).
+\n	Matches a newline (LF Only) (paragraph) (UNIX Files).
+\t	Matches a tab character.
+
+# this is my first choice.
+# search ^\n (front of newline (LF Only)), replace with opening |||<p> (the three pipes are just a unique place holder for the closing </p> tag)
+:%s/^\n/|||<p>/g
+# search for |||, replace with closing </p> and add \r (newline (CR Only))
+:%s/|||/<\/p>\r/g
+
+# these produce a simular result.
+:%s/\n$/<\/p>|||/g
+:%s/|||/\r<p>/g

@@ -24,7 +24,7 @@ if (person.address.zip === 80521) {
 
 document.body.offsetHeight;
 
-
+var age = 21;
 switch (age) {
    case 21:
             console.log("I'm 21");

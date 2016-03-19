@@ -1,0 +1,52 @@
+<html>
+  <head>
+
+  <style>
+    body {
+        height: 5000px;
+    }
+    .btn {
+      position: absolute;
+      display: block;
+      top: 25px;
+      width: 100px;
+      height: 25px;
+      border: 1px solid #999;
+      background: #ccc
+    }
+    .first {  left: 200px; }
+    .second { left: 320px; }
+    .third {  left: 440px; }
+    .fourth { left: 560px; }
+    .fifth {  left: 680px; }
+  </style>
+
+  </head>
+  <body>
+
+    <div class="btn first"></div>
+    <div class="btn second"></div>
+    <div class="btn third"></div>
+    <div class="btn fourth"></div>
+    <div class="btn fifth"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script>
+      $(function(){
+        var topOffset = 25;
+        var btns = $('.btn');
+        var midpoint = Math.floor(btns.length / 2);
+        $(window).on('scroll', function(event){
+          var offset = $(window).scrollTop();
+          console.log("offset", offset);
+          if(offset < 0) offset = 0;
+          btns.stop(true);
+          btns.each(function(idx, btn){
+            var delay = Math.abs(midpoint - idx) * 250;
+            $(btn).animate({top: offset+topOffset}, 250 + delay);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
