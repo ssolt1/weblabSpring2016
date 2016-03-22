@@ -1,10 +1,16 @@
 .navbar {
-   background-color: #ccc;
+   /*background-color: #ccc;*/
+   background-color: gray;
 }
 
-.footbar {
-   background-color: #ccc;
+.navbar ul li {
+   width: 25.0%;
+   text-align: center;
 }
+
+/*.footbar {
+   background-color: gray;
+}*/
 
 body {
    background-color: lightgray;
@@ -26,8 +32,8 @@ li {
    float: left;
    display: block;
    text-align: left;
-   background-color: #666;
-   width: 25.0%;
+   /*color: darkgray;*/
+   /*width: 25.0%;*/
 }
 
 ul:after {
@@ -40,10 +46,11 @@ ul:after {
 
 a {
    display: block;
-   background-color: darkblue;
+   background-color: lightgray;
    color: #fff;
    text-align: center;
    text-decoration: none;
+   color: darkgray;
 }
 
 .chapBodyDiv {
