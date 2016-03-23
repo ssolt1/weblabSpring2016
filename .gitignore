@@ -32,6 +32,7 @@ node_modules
 # Optional REPL history
 .node_repl_history
 
-# ignore notes directory and *.txt files.
+# ignore notes, archive directories and *.txt files.
 notes
+archive
 *.txt
