@@ -66,7 +66,8 @@ span {
     font-family: Times, Times New Roman, Tahoma;
     font-size: 36pt;
     color: #fff;
-    background-image: url("file:///home/steves/Documents/repositories/weblabSpring2016/alice/img/image3063.png");
+    /*background-image: url("file:///home/steves/Documents/repositories/weblabSpring2016/alice/img/image3063.png");*/
+    background-image: url("file:///img/image3063.png");
     background-repeat: no-repeat;
     background-position: center;
     line-height: 1.0;
