@@ -25,6 +25,10 @@ body {
    line-height: 1.5;
 }
 
+/*.toc ul li {
+    text-align:center;
+}*/
+
 ul,
 li {
    list-style-type: none;
@@ -35,9 +39,7 @@ li {
 li {
    float: left;
    display: block;
-   text-align: left;
-   /*color: darkgray;*/
-   /*width: 25.0%;*/
+   text-align: center;
 }
 
 ul:after {
@@ -51,10 +53,9 @@ ul:after {
 a {
    display: block;
    background-color: lightgray;
-   /*color: #fff;*/
    text-align: center;
    text-decoration: none;
-   color: darkgray;
+   color: black;
 }
 
 .chapBodyDiv {
