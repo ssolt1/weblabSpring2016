@@ -5,7 +5,7 @@ $(function() {
         "firstName": '',
         "lastName": '',
         "email": '',
-        "password":''
+        "note": ''
     }
     // get control of my form to prevent it from submitting in the traditional manner
     $('form').on('submit', function(e) {
@@ -20,7 +20,7 @@ $(function() {
             dataPackage.firstName = $('#firstName').val();
             dataPackage.lastName = $('#lastName').val();
             dataPackage.email = $('#emailAddr').val();
-            dataPackage.password = $('#password').val();
+            dataPackage.note = $('#note').val();
 
         } else {
             // if the form is invalid, post a message to the console.
@@ -46,13 +46,13 @@ $(function() {
             }
         });
 
-        // check the password field  same logic
-        if($('#password').val() === '') {
+        // check the note field  same logic
+        if($('#note').val() === '') {
             // no value: add error class
-            $('#password').parent().addClass('error');
+            $('#note').parent().addClass('error');
         } else {
             // value: remove class and increment the valid counter
-            $('#password').parent().removeClass('error');
+            $('#note').parent().removeClass('error');
             isValid++;
         }
 
@@ -77,13 +77,5 @@ $(function() {
             return false;
         }
     }
-
-
-
-
-
-
-
-
 
 });
