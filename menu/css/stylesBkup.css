@@ -46,6 +46,10 @@ tbody td:nth-last-child(-n + 4) {
 	font-size: .7rem;
 }
 
+/* above is the top table
+    Below is the left and right columns.
+*/
+
 .left {
   position: relative;
   float: left;

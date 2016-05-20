@@ -2,6 +2,7 @@ body {
   margin: 0 auto;
   padding: 0;
   max-width: 750px;
+  font-size: 10px;
   font-family:sans-serif;
 }
 
@@ -46,6 +47,14 @@ tbody td:nth-last-child(-n + 4) {
 	font-size: .7rem;
 }
 
+/* above is the top table
+    Below is the left and right columns.
+*/
+.upright .left table tr td {
+    text-align: left;
+    /*color: green;*/
+}
+
 .left {
   position: relative;
   float: left;
@@ -53,16 +62,25 @@ tbody td:nth-last-child(-n + 4) {
   max-width: 375px;
   background-color: #B9D7D9;
   margin-bottom: 10px;
+  text-align: left;
 }
 
-.left p {
+.hot td{
+   color: red;
+}
+/*table tr td{
+    font-family: sans-serif;
+    color: green;
+
+}*/
+/*.left p {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: -10px;
   font-family: sans-serif;
   color: green;
   text-align: justify;
-}
+}*/
 
 .right {
   position: relative;
