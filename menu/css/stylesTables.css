@@ -59,24 +59,21 @@ tbody td:nth-last-child(-n + 4) {
   position: relative;
   float: left;
   width: 90%;
-  max-width: 360px;
-  /*background-color: #B9D7D9;*/
+  max-width: 375px;
+  background-color: #B9D7D9;
   margin-bottom: 10px;
   text-align: left;
-  color: green;
 }
 
-.right {
-  position: relative;
-  float: right;
-  width: 90%;
-  max-width: 360px;
-  background-color: #F4EBC3;
-  margin-bottom: 10px;
-  color: green;
+.hot td{
+   color: red;
 }
+/*table tr td{
+    font-family: sans-serif;
+    color: green;
 
-/*.right p {
+}*/
+/*.left p {
   margin-left: 5px;
   margin-right: 5px;
   margin-top: -10px;
@@ -85,15 +82,25 @@ tbody td:nth-last-child(-n + 4) {
   text-align: justify;
 }*/
 
-.subHeadingTop1 {
-  /*margin-top: 6px;*/
-  margin-bottom: 6px;
-  text-align: center;
-  color: red;
+.right {
+  position: relative;
+  float: right;
+  width: 90%;
+  max-width: 375px;
+  background-color: #F4EBC3;
+  margin-bottom: 10px;
 }
 
-.subHeadingTop1a {
-  margin-bottom: 0px;
+.right p {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: -10px;
+  font-family: sans-serif;
+  color: green;
+  text-align: justify;
+}
+
+.subHeadingTop1 {
   text-align: center;
   color: red;
 }
@@ -103,75 +110,12 @@ tbody td:nth-last-child(-n + 4) {
   color: green;
 }
 
-.subHeadingTop2a {
-  margin: 0px;
-  text-align: center;
-  color: green;
-  font-weight: normal;
-  font-style: italic;
-}
-
 .subHeadingTop3 {
-  /*margin: 0px;*/
   text-align: center;
   color: red;
-}
-
-.subHeadingTop3a {
-  margin-left: 10px;
-  margin-right: 191px;
-  margin-bottom: 10px;
-  display: inline-block;
-  width: 100px;
-  text-align: left;
 }
 
 div p {
   text-align: justify;
   color: green;
-}
-
-.hot {
-    color: red;
-}
-
-span.number {
-    display: inline-block;
-    width: 23px;
-    text-align: right;
-}
-
-span.name {
-    font-size: 12px;
-    /*display: block;*/
-    margin-left: 25px;
-    margin-right: 130px;
-}
-
-span.price {
-    float: right;
-}
-
-span.priceLg {
-    /*float: right;*/
-    margin-right: -10px;
-}
-
-span.priceSm {
-    margin-right: 20px;
-    text-align: right;
-}
-
-span.subIngred {
-    font-size: 9px;
-    display: inline-block;
-    margin-left: 51px;
-}
-
-hr {
-    /*height:7px;*/
-    max-width: 365px;
-    border-color: red;
-    border-width: 4px;
-    border-style: solid;
 }
